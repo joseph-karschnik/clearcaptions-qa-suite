@@ -41,6 +41,7 @@ screenshots/
 *.png
 *.jpg
 !presentation/
+!presentation/*.html
 
 # Logs
 *.log
