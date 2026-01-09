@@ -1,0 +1,77 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Test Reports
+reports/
+*.html
+*.json
+screenshots/
+*.png
+*.jpg
+!presentation/
+
+# Logs
+*.log
+logs/
+
+# Environment variables
+.env
+.env.local
+
+# Test Data (sensitive)
+test_data/*.yaml
+!test_data/test_users.yaml.example
+!test_data/caption_test_cases.yaml
+
+# Configuration (sensitive)
+config/config.yaml
+!config/config.yaml.example
+
+# Mobile Apps
+apps/
+*.ipa
+*.apk
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Git
+.git/

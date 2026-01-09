@@ -1,0 +1,49 @@
+# Core Testing Framework
+pytest==7.4.3
+pytest-html==4.1.1
+pytest-xdist==3.5.0
+pytest-timeout==2.2.0
+pytest-rerunfailures==12.0
+pytest-json-report==1.5.0
+
+# Web Testing
+selenium==4.15.2
+webdriver-manager==4.0.1
+playwright==1.40.0
+
+# Mobile Testing
+Appium-Python-Client==3.1.1
+
+# API Testing
+requests==2.31.0
+httpx==0.25.2
+jsonschema==4.20.0
+
+# Accessibility Testing
+axe-selenium-python==4.9.0
+pa11y==0.0.1
+
+# Caption Quality Testing
+jiwer==3.0.3
+numpy==1.26.2
+scipy==1.11.4
+
+# Test Data & Configuration
+pyyaml==6.0.1
+python-dotenv==1.0.0
+faker==20.1.0
+
+# Reporting & Logging
+allure-pytest==2.13.2
+loguru==0.7.2
+
+# Utilities
+python-dateutil==2.8.2
+pytz==2023.3
+pillow==10.1.0
+
+# Performance Testing
+locust==2.17.0
+
+# Security Testing
+bandit==1.7.5

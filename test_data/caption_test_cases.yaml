@@ -1,0 +1,53 @@
+# Caption quality test cases
+# Reference: Expected caption text
+# Hypothesis: Actual caption text (for testing)
+# Expected WER: Maximum acceptable Word Error Rate
+
+caption_test_cases:
+  simple_greeting:
+    reference: "Hello, how are you today?"
+    expected_wer: 0.0
+    category: "greeting"
+  
+  phone_conversation:
+    reference: "I would like to schedule an appointment for next Tuesday at three o'clock."
+    expected_wer: 0.05
+    category: "appointment"
+  
+  technical_terms:
+    reference: "ClearCaptions provides real-time phone captioning services for individuals with hearing loss."
+    expected_wer: 0.03
+    category: "technical"
+  
+  numbers_and_dates:
+    reference: "The meeting is scheduled for January fifteenth, two thousand twenty-six at two thirty PM."
+    expected_wer: 0.05
+    category: "dates"
+  
+  long_sentence:
+    reference: "This is a longer sentence that tests the captioning system's ability to handle extended speech patterns and maintain accuracy throughout the entire phrase."
+    expected_wer: 0.08
+    category: "long_sentence"
+  
+  punctuation_test:
+    reference: "Hello! How are you? I'm doing well, thank you."
+    expected_wer: 0.02
+    category: "punctuation"
+  
+  fcc_compliance:
+    reference: "FCC requires that captioning services maintain at least ninety-nine percent accuracy for all telephone conversations."
+    expected_wer: 0.01
+    category: "compliance"
+
+latency_test_cases:
+  normal_call:
+    expected_latency_ms: 2000
+    max_latency_ms: 3000
+  
+  high_quality_call:
+    expected_latency_ms: 1500
+    max_latency_ms: 2000
+  
+  fcc_requirement:
+    expected_latency_ms: 2500
+    max_latency_ms: 3000
